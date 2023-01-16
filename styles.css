@@ -2,13 +2,13 @@ body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    margin-left: 75px;
-    margin-right: 75px;
+    margin-left: 150px;
+    margin-right: 150px;
+    gap: 5px;
 }
 
 .hero {
     display: flex;
-    flex: 1;
     flex-direction: column;
 }
 
@@ -16,13 +16,18 @@ body {
     display:flex;
     justify-content: space-between;
     align-content: center;
-    padding: 15px;
+    padding: 10px;
     background-color: rgb(41, 40, 40);
+    border: 1px;
+    border-style: solid;
+    border-top-left-radius:  10px;
+    border-top-right-radius: 10px;
 }
 
 .logo {
     color: greenyellow;
     letter-spacing: 3px;
+    padding: 0px;
 }
 
 .menu,
@@ -32,7 +37,7 @@ ul {
     gap: 1em;
     padding: 0px;
     margin: 0px;
-    justify-content: center;
+    align-content: center;
     text-decoration: none;
     list-style-type: none;
     color: rgb(247, 247, 249);
@@ -45,7 +50,12 @@ ul {
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 35px;
-    background-color: rgb(164, 165, 166);
+    background-color: rgb(209, 210, 212);
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .banner-left {
@@ -57,16 +67,15 @@ ul {
     padding: 10px
 }
 
-.banner-left > p {
-    font-size: 12px;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 0px;
-}
-
 .banner-left > h1 {
     padding: 0px;
     margin: 0px;
     font-size: 24px;
+}
+
+.banner-left > p {
+    font-size: 12px;
+    padding: 0px;
 }
 
 .hero-button {
@@ -74,11 +83,11 @@ ul {
     width: fit-content;
     padding: 5px;
     background-color: greenyellow;
-    align-self: center;
     font-weight: bold;
     font-size: 10px;
     border-style: none;
     margin: 10px;
+    margin-left: 0px;
 }
 
 .header-image {
@@ -86,6 +95,7 @@ ul {
     max-height: 200px;
     margin: 5px;
     border: 5px;
+    border-radius: 25px;
     padding: 10px;
     align-self: center;
 }
@@ -96,10 +106,15 @@ ul {
     flex-direction: column;
     justify-content: center;
     margin: 0px;
-    padding: 10px;
+    padding-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
-    background-color: rgb(41, 40, 40);
+    padding-bottom: -30px;
+    background-color: rgb(122, 120, 120);
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
     
 }
 
@@ -112,6 +127,7 @@ ul {
 .info-items {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 1em;
     text-align: center;
     font-weight: bold;
@@ -121,7 +137,107 @@ ul {
 .info-image * {
     display: flex;
     flex-direction: column;
-    max-width: 100px;
-    height: 75px;
+    width: 100px;
+    height: 100px;
     border-radius: 8px;
+}
+
+.quote {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: rgb(247, 247, 249);
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.quote > .main-quote {
+    display: flex;
+    max-width: 400px;
+    font-size: 22px;
+    align-self: center;
+    flex-wrap: wrap;
+}
+
+.quote > .citation {
+    align-self: center;
+    padding-left: 100px;
+}
+
+.action {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(122, 120, 120);
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    justify-content: center;
+    align-content: center;
+    padding: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.call-box {
+    display: flex;
+    flex-shrink: 2;
+    max-width: 400px;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(247, 247, 249);
+    gap: 3em
+
+}
+
+.call-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.call-text > h3 {
+    padding: 0px;
+    margin: 0px;
+}
+
+.call-button {
+    align-self: center;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    border: 2px;
+    width: 80px;
+    padding: 5px;
+    background-color: greenyellow;
+    font-weight: bold;
+    font-size: 15px;
+    border-style: none;
+    margin: 10px;
+    margin-left: 0px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 0px;
+    background-color: rgb(41, 40, 40);
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    color: greenyellow;
+}
+
+.footer > h3 {
+    padding: 0px;
+    margin: 0px;
 }
